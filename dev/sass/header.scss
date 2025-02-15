@@ -1,8 +1,68 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
+header {
+	padding: 48px 0;
+	position: relative;
+
+	> .container {
+	display: flex;
+	align-items: center;
+	gap: 94px;
+	}
+	.btn-burger {
+		margin-left: auto;
+	}
+}
+.header-logo{
+	z-index: 1;
+}
+.menu {
+	&__list {
+	display: flex;
+	gap: 94px;
+	list-style-type: none;
+	}
+	&__link {
+	font-size: 20px;
+	color: $text;
+	text-decoration: none;
+	}
+	&__link:hover {
+	color:$secondary-color ;
+	}
+}
+.btn-burger {
+	border: none;
+	background: none;
+	z-index: 1;
+	width: 42px;
+	height: 18px;
+	position: relative;
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: inline-block;
+		height: 2px;
+		width: 100%;
+		background-image: linear-gradient(245deg, #237249 0%, #35c66b 100%);
+		transition: .3s;
+		&:nth-child(2){
+			top: 9px;
+		}
+		&:last-child{
+			top: 18px;
+		}
+	}
+	&.active {
+		span{
+		transform: rotate(45deg);
+		top: 8px;
+		&:nth-child(2){
+		transform: rotate(-45deg);
+		top: 8px;
+		}
+		&:last-child{
+			opacity: 0;
+		}
+		}
 	}
 }

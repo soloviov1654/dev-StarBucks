@@ -1,3 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    background-color: $bg-color;
+    color: $text;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: $title-color;
+}
 .fw-100 {
     font-weight: 100;
 }
@@ -34,7 +54,17 @@
 .d-none {
     display: none;
 }
-.img-fluid {
+img {
     max-width: 100%;
     height: auto;
+}
+.container {
+    max-width: 1274px;
+    padding: 0 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+::selection {
+    color: $bg-color;
+    background-color: $primary-color;
 }

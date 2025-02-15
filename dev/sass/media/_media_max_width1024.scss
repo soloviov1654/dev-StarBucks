@@ -1,4 +1,47 @@
 @media screen and (max-width: 1024px) {
+    header {
+            padding: 34px 0;
+        > .container {
+            gap: 0;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 97px;
+            background-color: $bg-color;
+            z-index: 1;
+        }
+    }    
+        .container{
+            padding: 0 25px;
+        }
+        .header-logo {
+            max-width: 114px;
+        }
+        .menu__list {
+            gap: 48px;
+            flex-direction: column;
+        }
+        .mobile-container {
+	        position: absolute;
+	        left: 0 ;
+	        top: 0;
+            width: 100%;
+	        background: $bg-accent-color;
+	        padding: 25px 25px 75px;
+            background-image: linear-gradient(245deg, rgba(35, 114, 73, 0.32) 0%, rgba(53, 198, 107, 0.32) 52%);
+            backdrop-filter: blur(3px);
+            transition: .3s;
+            visibility: hidden;
+            transform: translate(0, -100%);
+	        &.show {
+                top: 97px;
+	        	display: block;
+                transform: translate(0, 0);
+                visibility: visible;
+	        }
+        }
 }
-
-
