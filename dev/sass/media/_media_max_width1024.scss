@@ -44,4 +44,38 @@
                 visibility: visible;
 	        }
         }
+    footer {
+        .footer{
+            padding: 37px 0 7px;
+        &-logo {
+        max-width: 135px;
+        }
+        &-nav {
+            order: 1;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 28px;
+            padding: 35px 10px;
+            &__title , &__link  {
+                font-size: 16px;
+            }
+        }
+        &-row {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+        &__phones-item {
+            font-size: 16px;
+        }  
+        &-social {
+            height: 34px;
+            width: 34px;
+        }
+        }
+        .btn {
+            
+            margin-left: auto;  
+        }
+    }
 }
