@@ -20,3 +20,39 @@ $bg-accent-color: #0B0C0D;
     z-index: -1;
     background: center/contain no-repeat;
 }
+@keyframes btn-secondary {
+    0% {
+        height: 0;
+        width: 0;
+        transform: skew(-25deg, 0);
+        right: 0;
+    }
+
+    10% {
+        height: 0;
+        width: 0;
+        transform: skew(-25deg, 0);
+        right: 35px;
+    }
+
+    15% {
+        height: 100%;
+        width: 15px;
+        transform: skew(-25deg, 0);
+        right: 55px;
+    }
+
+    90% {
+        transform: skew(-25deg, 0);
+        right: calc(100% - 35px);
+        height: 100%;
+        width: 0;
+    }
+
+    100% {
+        transform: skew(-25deg, 0);
+        right: calc(100% - 35px);
+        height: 0;
+        width: 0;
+    }
+}
