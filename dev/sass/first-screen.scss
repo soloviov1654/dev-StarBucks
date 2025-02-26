@@ -1,11 +1,24 @@
 .first-banner {
+    margin-bottom: 100px;
     .container {
         display: flex;
         gap: 24px;
+        justify-content: space-between;
     }
 }
 .banner-information {
     max-width: 574px;
+    .main-text {
+        position: relative;
+        &::after {
+        @include foooter-light;
+        width: 586px;
+        height: 653px;
+        background-image: url(./assets/img/shadow-green-big.svg); 
+        top: 150px;
+        left: 200px;
+        }
+    }
 }
 .banner-description {
     color: $text;
@@ -17,4 +30,65 @@
     display: flex;
     gap: 16px;
     align-items: center;
+    margin-bottom: 54px;
 }
+.statistic {
+    &-list {
+        display: flex;
+        gap: 46px;
+        
+    }
+    &__item {
+        max-width: 126px;
+    }
+    &__title {
+        font-size: 62px;
+    }
+    &__subtitle {
+        font-size: 20px;
+    }
+}
+.cup-side {
+    margin-right: 43px;
+    position: relative;
+        &::before {
+        @include foooter-light;
+        width: 479px;
+        height: 479px;
+        background-image: url(./assets/img/cup-shadow-white.png); 
+        top: 125px;
+        left: 75px;
+        }
+        &::after {
+        content: "";
+        position: absolute;
+        background: center/contain no-repeat;
+        z-index: -1;
+        width: 700px;
+        height: 700px;
+        background-image: url(./assets/img/cup-shadow-green.png);
+        right: -190px;
+        bottom: -200px;
+        }
+}
+.cup-discount {
+        font-size: 54px;
+        font-weight: 500;
+        position: absolute;
+        width: 183px;
+        height: 183px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        top: 0;
+        right: 38px;
+        background: url(./assets/img/sale-big.svg) center no-repeat;
+        // &:after {
+        //     content: "";
+        //     position: absolute;
+            
+        // }
+    }
