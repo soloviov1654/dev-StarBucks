@@ -9,6 +9,7 @@ html {
     background-color: $bg-color;
     color: $text;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     display: flex;

@@ -26,6 +26,14 @@
     @extend h6 ;
     margin-bottom: 54px;
 }
+.banner-line {
+        width: 1102px;
+        height: 677px;
+        position: absolute;
+        top: 200px;
+        right: -470px;
+        z-index: -1;
+    }
 .btn-group  {
     display: flex;
     gap: 16px;
@@ -72,23 +80,36 @@
         }
 }
 .cup-discount {
-        font-size: 54px;
-        font-weight: 500;
-        position: absolute;
-        width: 183px;
-        height: 183px;
+        --max-size: 184px;
+        --size: 14.154vw;
+        width: var(--size);
+        height: var(--size);
+        max-width: var(--max-size);
+        max-height: var(--max-size);
+        background: url(./assets/img/sale-big.svg) center / 100% no-repeat;
         border-radius: 50%;
         display: flex;
         align-items: center;
-        text-align: center;
         justify-content: center;
-        color: white;
+        text-align: center;
+        color: #fff;
+        font-size: 55px;
+        font-size: Min(4.231vw, 55px);
+        font-weight: 500;
+        position: absolute;
         top: 0;
         right: 38px;
-        background: url(./assets/img/sale-big.svg) center no-repeat;
-        // &:after {
-        //     content: "";
-        //     position: absolute;
-            
-        // }
+        z-index: 1;
+        &:before {
+            content: "";
+            position: absolute;
+            width: calc(100% - 42px);
+            height: calc(100% - 42px);
+            box-shadow: -4.56px 15.52px 26.48px #143e287a;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: -1;
+        }
     }
