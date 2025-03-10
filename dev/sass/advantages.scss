@@ -1,1 +1,99 @@
+.advantages > .container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     height: 148px;
+    //     width: 148px;
+    //     border-radius: 100%;
+    //     background-image: linear-gradient(245deg, #237249 0%, #35c66b 100%);
+    //     box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+    // }
+}
+.advantage-row {
+    padding: 50px 78px 36px;
+    border-radius: 46px;
+    background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
+    max-width: 1029px;
+    height: 372px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 120px;
+    z-index: -1;
+    &:before {
+        --size: 750px;
+        @include foooter-light;
+        width: var(--size);
+        height: var(--size);
+        background: url(./assets/img/adv-green.png) center no-repeat;
+        left: 150px;
+        top: 170px;
+    }
+    &:after {
+        --size: 600px;
+        @include foooter-light;
+        width: var(--size);
+        height: var(--size);
+        background: url(./assets/img/adv-white.png) center no-repeat;
+        left: 85%;
+        top: 65%;
+    }
+    .cup-discount {
+        top: -70px;
+        left: 15px;
+    }
+}
+.advantage {
+    max-width: 228px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_img-wrapper {
+        position: relative;
+        --size: 148px;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+        margin: 12px;
+        background-image: linear-gradient(245deg, $primary-color 0%, $secondary-color 100%);
 
+         img {
+            max-width: 220px;
+            max-height: 220px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+            // &::after {
+            //     content: "";
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     height: 148px;
+            //     width: 148px;
+            //     border-radius: 100%;
+            //     background-image: linear-gradient(245deg, #237249 0%, #35c66b 100%);
+            //     box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+            //     z-index: -1;
+            //     }
+        }
+    &_title {
+        color: #121517;
+        font-weight: 500;
+        z-index: 1;
+    }   
+    &_sub {
+        color: #292C2E;
+        font-weight: 400;
+    } 
+}
