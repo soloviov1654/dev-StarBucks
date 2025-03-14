@@ -86,4 +86,36 @@
             margin-left: auto;  
         }
     }
+    .advantage-row {
+    padding: 50px 40px 36px;
+    gap: 40px;
+        .cup-discount {
+            top: -55px;
+            left: -30px;
+            height: 120px;
+            width: 120px;
+                &__text {
+                    font-size: 32px; 
+                    max-width: 99px;
+                    letter-spacing: -0.02em;
+                    font-weight: 500;
+                    line-height: 86%;
+                }
+        }
+    }
+    .advantage {
+        &_img-wrapper {
+            --size: 110px;
+             img {
+                max-width: 150px;
+                max-height: 150px;
+                }
+            }
+        &_title {
+            font-size: 24px;
+        }   
+        &_sub {
+            font-size: 16px;
+        } 
+    }
 }

@@ -15,6 +15,7 @@
     // }
 }
 .advantage-row {
+    position: relative;
     padding: 50px 78px 36px;
     border-radius: 46px;
     background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
@@ -46,8 +47,18 @@
         top: 65%;
     }
     .cup-discount {
-        top: -70px;
-        left: 15px;
+        top: -80px;
+        left: -50px;
+        text-transform: uppercase;
+        height: 154px;
+        width: 154px;
+        &__text {
+           font-size: 32px; 
+           max-width: 99px;
+           letter-spacing: -0.02em;
+           font-weight: 500;
+           line-height: 86%;
+        }
     }
 }
 .advantage {

@@ -41,5 +41,37 @@
     .cup-discount {
         right: 100px;
     }
-    
+
+    .advantage-row {
+    flex-direction: column;
+    max-width: 220px;
+    height: 604px;
+    padding: 20px 40px;
+    gap: 24px;
+        .cup-discount {
+            top: -38px;
+            left: 140px;
+            height: 90px;
+            width: 90px;
+                &__text {
+                    font-size: 18px; 
+                    max-width: 58px;
+                }
+        }
+    }
+    .advantage {
+        &_img-wrapper {
+            --size: 70px;
+             img {
+                max-width: 90px;
+                max-height: 90px;
+                }
+            }
+        &_title {
+            font-size: 18px;
+        }   
+        &_sub {
+            font-size: 12px;
+        } 
+    }
 }
