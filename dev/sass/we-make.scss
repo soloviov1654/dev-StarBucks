@@ -1,0 +1,93 @@
+.we-make > .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.we-make {
+        h1 {
+            margin-top: 70px;
+            margin-bottom: 63px;
+        }
+        p {
+            font-weight: 400;
+            line-height: 163%;
+            letter-spacing: -0.02em;
+            margin-bottom: 63px;
+        }
+        .img-side {
+            position: relative;
+            .img-wrapper {
+                position: relative;
+                &:after {
+                content: "";
+                position: absolute;
+                left: 41%;
+                top: 55%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                width: 465px;
+                height: 684px;
+                background: url(./assets/img/kitchen-back.png) center no-repeat;
+                }
+            }
+            .cup-discount {
+                right: -10px;
+                top: 0px;
+                text-transform: uppercase;
+                height: 186px;
+                width: 186px;
+                &__text {
+                   font-size: 40px; 
+                   max-width: 120px;
+                   letter-spacing: -0.02em;
+                   font-weight: 500;
+                   line-height: 86%;
+                }
+            }
+        }
+    .content-side {
+        max-width: 457px;
+            .img-wrapper {
+                position: relative;
+                min-height: 275px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                    &:after {
+                    content: "";
+                    position: absolute;
+                    left: 44%;
+                    top: 40%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                    width: 447px;
+                    height: 265px;
+                    background: url(./assets/img/kitchen-2-back.png) center no-repeat;
+                    }
+            svg {
+                height: 23px;
+                width: 20px;
+                display: block;
+            }        
+            .btn {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: max-content;
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+            }
+        }
+    }
+}    
+.we-make__line {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 993px;
+    height: 999px;
+    display: none;
+}
