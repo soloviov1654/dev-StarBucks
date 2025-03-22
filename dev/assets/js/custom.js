@@ -65,8 +65,11 @@ modalTriggers.forEach(item => {
 })
 
 modalClose.forEach(close => {
-    close.addEventListener('click', closeModal)
-})
+    close.addEventListener('click', () => {
+        closeModal();
+        stoppVid();
+    });
+});
 
 
 
