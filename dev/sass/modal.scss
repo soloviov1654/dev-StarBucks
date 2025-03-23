@@ -30,6 +30,8 @@
     background-color: #fffde7;
     color: black;
 
+    width: 90%; 
+    max-width: 1300px;
 
     border: 1px solid #ccc;
     transition: .5s ease-out;
@@ -60,6 +62,26 @@
             align-items: center;
         }
     } 
+    video {
+    width: 100%;
+    max-height: 70vh;
+    }
+    .close_btn {
+        display: block;
+        margin-left: auto;
+        width: 40px;
+        font-size: 24px;
+        padding: 5px;
+        border-radius: 450px;
+        font-weight: 700;
+        height: 40px;
+    }
+    &-content {
+    margin-bottom: 24px;
+    color: black;
+    font-size: 36px;
+    font-weight: 600;
+    }
 }
 .drinks-row {
     margin-left: 50px;
@@ -75,9 +97,6 @@
 }
 .model-btn-row {
     display: flex;
-}
-.modal-content {
-    margin-bottom: 24px;
 }
   button.accept {
     background-color: #ed6755;
