@@ -118,4 +118,28 @@
             font-size: 16px;
         } 
     }
+    .we-make > .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .we-make .img-side .cup-discount {
+    right: 130px;
+    top: 130px;
+    }
+    .we-make .img-side .img-wrapper {
+    margin-left: 50px;
+        &::after {
+        left: 22%;
+        top: 53%;
+        }
+    }
+    .we-make__line {
+    top: -168px;
+    left: -92px;
+    width: 1100px;
+    height: 1100px;
+    }
+    .content-side {
+        margin-left: 23px;
+    }
 }

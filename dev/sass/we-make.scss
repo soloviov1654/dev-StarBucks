@@ -83,11 +83,14 @@
         }
     }
 }    
+.line-wrapper {
+    position: relative;
+}
 .we-make__line {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    top: 200px;
     width: 993px;
     height: 999px;
-    display: none;
+    z-index: -5;
+    left: 400px;
 }
