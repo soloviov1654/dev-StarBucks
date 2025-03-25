@@ -168,17 +168,11 @@ img {
     height: 0;
 }
 
-
-
-
-
 .gradient {
     background-clip: text;
     color: transparent;
     background-image: linear-gradient(210deg, #237249 0%, #35c66b 100%);
 }
-
-
 
 ::selection {
     color: $bg-color;

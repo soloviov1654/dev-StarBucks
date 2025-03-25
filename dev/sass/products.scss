@@ -1,0 +1,80 @@
+.products {
+	.container {
+		margin-bottom: 100px;
+	}
+	&-content {
+		display: flex;
+		gap: 72px;
+		margin-bottom: 47px;
+	}
+	h1 {
+		max-width: 392px;
+	}
+	.banner-description {
+		max-width: 444px;
+		margin-top: 17px;
+		line-height: 163%;
+		letter-spacing: -0.02em;
+	}
+	.swiper-slide {
+		max-width: 277px;
+		border: 1px solid #d9d9d9;
+		border-radius: 29px;
+		text-align: center;
+		padding: 54px 30px 33px;
+		img {
+			max-width: 180px;
+			max-height: 240px;
+			position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+		}
+	}
+	.coffee {
+		&-img {
+			position: relative;
+			margin-bottom: 31px;
+        	--size: 186px;
+        	width: var(--size);
+        	height: var(--size);
+        	border-radius: 50%;
+        	box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+        	background-image: linear-gradient(245deg, $primary-color 0%, $secondary-color 100%);
+		}
+		&-values {
+			display: flex;
+			justify-content: center;
+			gap: 35px;
+			margin-bottom: 30px;
+		}
+		&-title {
+			font-size: 32px;
+			font-weight: 500;
+			margin-bottom: 18px;
+		}
+		&-descr {
+			font-size: 20px;
+			line-height: 163%;
+			letter-spacing: -0.02em;
+			margin-bottom: 7px;
+		}
+		&-price {
+			font-weight: 500;
+			font-size: 32px;
+			line-height: 163%;
+			letter-spacing: -0.02em;
+		}
+		&-ml {
+			font-size: 20px;
+			line-height: 163%;
+			letter-spacing: -0.02em;
+			display: flex;
+			align-items: end;
+		}
+	}
+	.btn {
+		font-size: 17px;
+		padding: 15px 40px;
+	}
+}

@@ -118,3 +118,20 @@ drinkTwo.addEventListener('click', () => {
 drinkThree.addEventListener('click', () => {
     drinkThreePlay();
 })
+
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+    direction: 'horizontal',
+    spaceBetween: 48,
+    slidesPerView: 4,
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
