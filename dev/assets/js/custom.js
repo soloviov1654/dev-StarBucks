@@ -122,16 +122,29 @@ drinkThree.addEventListener('click', () => {
 
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-    direction: 'horizontal',
-    spaceBetween: 48,
-    slidesPerView: 4,
-  loop: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 24,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        907: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1026: {
+          slidesPerView: 2,
+          spaceBetween: 48,
+        },
+        1233: {
+          slidesPerView: 3,
+          spaceBetween: 48,
+        },
+        1560: {
+          slidesPerView: 4,
+          spaceBetween: 48, 
+        }
+    }
 });

@@ -1,2 +1,37 @@
 @media screen and (max-width: 1199.99px) {
 }
+@media screen and (max-width: 1560px) {
+    .products .caroucell-wrapper .swiper {
+        max-width: 927px;
+    }
+    .swiper-navigation {
+    max-width: 1167px;
+    }
+}
+@media screen and (max-width: 1233.99px) {
+    .products .caroucell-wrapper .swiper {  
+        max-width: 602px;        
+    }
+    .swiper-navigation {
+    max-width: 841px;
+    }
+}
+@media screen and (max-width: 1026px) {
+    .products .caroucell-wrapper .swiper  {       
+        max-width: 578px;        
+    }
+    .products .container .caroucell-wrapper .swiper-button-next {
+    right: 55px;
+    }
+    .products .container .caroucell-wrapper .swiper-button-prev {
+    right: -55px;
+    }
+}
+@media screen and (max-width: 907px) {
+    .products .caroucell-wrapper .swiper {        
+        max-width: 277px;    
+    }
+    .swiper-navigation {
+    max-width: 516px;
+    }
+}
