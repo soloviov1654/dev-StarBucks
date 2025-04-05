@@ -109,11 +109,13 @@
 }    
 .swiper-button-prev.btn-outline , .swiper-button-next.btn-outline {
     transform: rotate(90deg);   
-    position: static; 
+    position: absolute; 
+	right: calc(-9%);
     &::after {
         content: "";
     }
 }
 .swiper-button-prev.btn-outline {
     transform: rotate(-90deg); 
+	left: calc(-9%);
 }

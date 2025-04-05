@@ -7,6 +7,12 @@
     .swiper-navigation {
     max-width: 1167px;
     }
+    .products .container .caroucell-wrapper .swiper-button-next {
+    right: 0%;
+    }
+    .products .container .caroucell-wrapper .swiper-button-prev {
+    left: 0%;
+    }
 }
 @media screen and (max-width: 1233.99px) {
     .products .caroucell-wrapper .swiper {  
@@ -21,10 +27,10 @@
         max-width: 578px;        
     }
     .products .container .caroucell-wrapper .swiper-button-next {
-    right: 55px;
+    right: 2%;
     }
     .products .container .caroucell-wrapper .swiper-button-prev {
-    right: -55px;
+    left: 2%;
     }
 }
 @media screen and (max-width: 907px) {
