@@ -1,3 +1,152 @@
 @media screen and (max-width: 575.99px) {
-    
+	.we-make .container {
+		margin-bottom: 0;
+		.img-side .cup-discount {
+			right: 100px;
+			height: 85px;
+			width: 85px;
+			top: 38px;
+			right: 62px;
+			.cup-discount__text {
+				font-size: 20px;
+				max-width: 70px;
+			}
+		}
+	}
+	div.cup-side {
+		padding: 0 64px;
+		margin-right: 0;
+		top: 17px;
+	}
+	.banner-line {
+		width: 110%;
+		top: -43px;
+		right: -62px;
+	}
+	.we-make .img-side .img-wrapper::after {
+		left: 17%;
+		top: 55%;
+		width: 163px;
+		height: 240px;
+	}
+	.we-make .img-side .img-wrapper {
+		margin-left: 20px;
+		img {
+			max-width: 160px;
+		}
+	}
+	.we-make .we-make__line {
+		top: -168px;
+		left: -240px;
+		width: 700px;
+		height: 700px;
+	}
+	.we-make .content-side {
+		margin-left: 0;
+		p {
+			font-weight: 400;
+			margin-bottom: 63px;
+			font-size: 14px;
+			line-height: 163%;
+			letter-spacing: -0.02em;
+		}
+		.banner-description {
+			margin-top: 0;
+			margin-bottom: 0;
+			max-width: 320px;
+		}
+		.img-wrapper {
+			max-width: 250px;
+			&::after {
+				left: 45%;
+				top: 45%;
+				width: 255px;
+				height: 160px;
+			}
+			.btn {
+				font-size: 14px;
+				line-height: 146%;
+				letter-spacing: -0.02em;
+				padding: 12px 25px 12px 25px;
+			}
+			svg {
+				height: 23x;
+				width: 21px;
+			}
+		}
+	}
+	.products .container {
+		.products-content {
+			gap: 0;
+			margin-left: 0;
+			h1 {
+				font-size: 53px;
+			}
+			p {
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 163%;
+				letter-spacing: -0.02em;
+				max-width: 258px;
+			}
+		}
+		.caroucell-wrapper {
+			.swiper-slide {
+				padding: 20px 30px 20px;
+			}
+			.coffee-title {
+				font-size: 21px;
+				margin-top: 30px;
+			}
+			.coffee-descr {
+				font-size: 13px;
+				max-width: 138px;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+			.coffee-price {
+				font-size: 21px;
+			}
+			.coffee-ml {
+				font-size: 13px;
+			}
+			.coffee-values {
+				margin-bottom: 20px;
+			}
+			img {
+				max-width: 120px;
+				max-height: 160px;
+			}
+			.coffee-img {
+				--size: 120px;
+				margin: 0 auto;
+			}
+			.btn {
+				font-size: 11px;
+				line-height: 146%;
+				letter-spacing: -0.02em;
+				padding: 9px 25px;
+			}
+			svg {
+				height: 25px;
+			}
+			.swiper-navigation div {
+				width: 53px;
+				height: 53px;
+				border-radius: 18px;
+				padding: 0;
+			}
+		}
+	}
+	.events .container {
+		.events-wrapper {
+			max-width: 225px;
+		}
+		h6 {
+			font-size: 14px;
+			max-width: 289px;
+			line-height: 163%;
+			letter-spacing: -0.02em;
+		}
+	}
 }

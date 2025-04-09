@@ -121,13 +121,13 @@ drinkThree.addEventListener('click', () => {
 
 
 
-const swiper = new Swiper('.swiper', {
+const swiperProd = new Swiper('.swiper-prod', {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 24,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-products-button-next',
+        prevEl: '.swiper-products-button-prev',
     },
     breakpoints: {
         907: {
@@ -148,3 +148,54 @@ const swiper = new Swiper('.swiper', {
         }
     }
 });
+
+// const swiperEvents = new Swiper(".swiper-events", {
+//     loop: true,
+//     spaceBetween: 24,
+//     navigation: {
+//         nextE1: '.swiper-events-button-next',
+//         prevE1: '.swiper-events-button-prev'
+//     },
+// });
+
+// const swiperEventsMediaQuery = window.matchMedia("(max-width: 1025px)")
+
+// function checkedBrackpoint(swiperEventsMediaQuery) {
+//     if (swiperEventsMediaQuery.matches) {
+//         return;
+//     } else {
+//         swiperEvents.destroy();
+//     }
+// }
+
+// checkedBrackpoint(swiperEventsMediaQuery);
+
+
+let swiperEvents;
+let swiperEventsMediaQuery = window.matchMedia("(max-width: 1024px)");
+
+
+function checkedBreakpoint(swiperEventsMediaQuery) {
+    if (swiperEventsMediaQuery.matches) {
+        if (!swiperEvents) {
+            swiperEvents = new Swiper('.swiper-events', {
+                spaceBetween: 36,
+                loop: true,
+
+                navigation: {
+                    nextEl: '.swiper-events-button-next',
+                    prevEl: '.swiper-events-button-prev'
+                }
+            });
+        }
+    } else {
+        if (swiperEvents) {
+            swiperEvents.destroy(true, true);
+            swiperEvents = null;
+        }
+    }
+}
+
+checkedBreakpoint(swiperEventsMediaQuery);
+
+swiperEventsMediaQuery.addEventListener("change", checkedBreakpoint);

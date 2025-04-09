@@ -83,15 +83,9 @@
 	.caroucell-wrapper {
 		position: relative;
 		margin: auto;
-		// .swiper-button-prev {
-		// 	left: -120px;
-		// }
-		// .swiper-button-next {
-		// 	right: -120px;
-		// }
 	}
 }
-.swiper {
+.swiper-prod {
         max-width: 1252px;
         margin: 0 auto;
     	}
@@ -107,15 +101,17 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }    
-.swiper-button-prev.btn-outline , .swiper-button-next.btn-outline {
+.swiper-products-button-prev.btn-outline , .swiper-products-button-next.btn-outline {
+	cursor: pointer;
     transform: rotate(90deg);   
     position: absolute; 
 	right: calc(-9%);
+	padding: 12px;
     &::after {
         content: "";
     }
 }
-.swiper-button-prev.btn-outline {
+.swiper-products-button-prev.btn-outline {
     transform: rotate(-90deg); 
 	left: calc(-9%);
 }
