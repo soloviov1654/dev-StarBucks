@@ -153,11 +153,15 @@
 			gap: 30px;
 			margin-left: 12%;
 		}
+		.banner-description {
+			margin-bottom: 0;
+		}
 	}
 
 	.events .container {
 		.banner-description {
 			max-width: 476px;
+			margin: 0;
 		}
 		h1 {
 			margin-left: 0;
