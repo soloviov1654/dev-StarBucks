@@ -160,4 +160,53 @@
 			letter-spacing: -0.02em;
 		}
 	}
+	.contacts > .container {
+		.contacts-title-wrapper {
+			a {
+				font-size: 20px;
+			}
+			h6 {
+				font-size: 14px;
+			}
+			.contacts-wrap {
+				a:nth-child(even) {
+					img {
+						width: 30px;
+						height: 30px;
+					}
+				}
+				a:nth-child(odd) {
+					img {
+						width: 38px;
+						height: 38px;
+					}
+				}
+			}
+		}
+		.img-side {
+			.img-wrapper {
+				&:after {
+					right: -105px;
+					max-width: 175px;
+				}
+				img {
+					max-width: 175px;
+				}
+			}
+			.cup-discount {
+				--max-size: 85px;
+				left: 40px;
+				&__text {
+					font-size: 18px;
+				}
+			}
+			.we-make__line {
+				top: -128px;
+				left: -164px;
+				width: 700px;
+				height: 700px;
+				transform: rotate(346deg);
+			}
+		}
+	}
 }

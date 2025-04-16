@@ -187,6 +187,28 @@
 			display: flex;
 		}
 	}
+	.contacts > .container {
+		flex-direction: column-reverse;
+		.img-side {
+			.cup-discount {
+				left: 135px;
+				top: 25%;
+			}
+			.we-make__line {
+				top: -80px;
+				width: 900px;
+				height: 900px;
+				left: -150px;
+			}
+			.img-wrapper {
+				display: flex;
+				justify-content: end;
+				margin-right: 25px;
+				&::after {
+				}
+			}
+		}
+	}
 	.footer .container .footer-row {
 		.btn-outline {
 			margin-left: auto;

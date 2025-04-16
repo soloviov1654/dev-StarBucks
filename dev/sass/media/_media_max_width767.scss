@@ -132,4 +132,35 @@
 		.btns-wrapper {
 		}
 	}
+	.contacts > .container {
+		.contacts-title-wrapper {
+			h1 {
+				max-width: 330px;
+			}
+		}
+
+		.img-side {
+			margin-bottom: 60px;
+			.img-wrapper {
+				position: relative;
+				&:after {
+					right: -145px;
+					max-width: 245px;
+				}
+				img {
+					max-width: 245px;
+				}
+			}
+			.cup-discount {
+				--max-size: 100px;
+				&__text {
+					font-size: 26px;
+				}
+			}
+			.we-make__line {
+				top: -168px;
+				left: -189px;
+			}
+		}
+	}
 }
